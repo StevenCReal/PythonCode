@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 
-plt.scatter(2, 4, s=200)
+x_values = [1, 2, 3, 4, 5]
+y_values = [1, 4, 9, 16, 25]
+
+plt.scatter(x_values, y_values)
 
 #设置图表标题并给坐标轴加上标签
 plt.title("Square Numbers", fontsize=24)
