@@ -6,7 +6,7 @@ times = 0
 # 只要程序处于活动状态， 就不断地模拟随机漫步
 while True:
     # 创建一个RandomWalk实例， 并将其包含的点都绘制出来
-    rw = RandomWalk(5000)
+    rw = RandomWalk()
     rw.fill_walk()
 
     point_numbers = list(range(rw.num_points))
