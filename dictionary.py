@@ -7,7 +7,7 @@ print(alien_0)
 alien_0['x_position'] = 0
 alien_0['y_position'] = 25
 print(alien_0)
-#______________________________________________________________
+# ______________________________________________________________
 
 alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
 print('Original x-position: ' + str(alien_0['x_position']))
@@ -26,12 +26,12 @@ alien_0['x_position'] += x_increment
 
 print("New x-position: " + str(alien_0['x_position']))
 
-#删除键-值对
+# 删除键-值对
 print(alien_0)
 del alien_0['speed']
 print(alien_0)
 
-#由类似对象组成的字典
+# 由类似对象组成的字典
 favorite_avengers = {
     'Steven': 'iron man',
     'Henry': 'hulk',
@@ -40,7 +40,7 @@ favorite_avengers = {
 }
 print(favorite_avengers)
 
-#遍历
+# 遍历
 print("We have different favorite avengers:")
 for name, avenger in favorite_avengers.items():
     print(name + ': ' + avenger.title())
@@ -48,15 +48,15 @@ for name, avenger in favorite_avengers.items():
 for name in favorite_avengers.keys():
     print(name)
 
-#按顺序遍历字典中的所有键,通常遍历顺序是不可预测的，所以要显示地写出要求
+# 按顺序遍历字典中的所有键,通常遍历顺序是不可预测的，所以要显示地写出要求
 for name in sorted(favorite_avengers.keys()):
     print(name)
 
-#剔除重复
+# 剔除重复
 for avenger in set(favorite_avengers.values()):
     print(avenger)
 
-#嵌套：字典和列表可以互相嵌套
+# 嵌套：字典和列表可以互相嵌套
 students = []
 
 for student_number in range(1, 31):
