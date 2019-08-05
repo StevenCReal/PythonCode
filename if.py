@@ -5,7 +5,7 @@ for car in cars:
     else:
         print(car.title())
 
-if cars[0] == 'audi' and cars[1] == 'bmw':  #与:and 或:or 非:!
+if cars[0] == 'audi' and cars[1] == 'bmw':  # 与:and 或:or 非:!
     print("Yes, you're right")
 
 if 'audi' in cars:
@@ -22,7 +22,7 @@ else:
     print("Your admission cost is $10.")
 
 requested_toppings = []
-if requested_toppings:  #需要判断列表是否为空
+if requested_toppings:  # 需要判断列表是否为空
     for requested_topping in requested_toppings:
         print("Adding " + requested_topping + ".")
         print("\nFinished making your pizza!")

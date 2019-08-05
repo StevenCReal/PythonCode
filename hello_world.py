@@ -19,4 +19,4 @@ print(message2)
 gpa = 5.0
 print("Amazing! you got a GPA: " + str(gpa))  # str()用于将其他类型转化为string类型，这样才能输出
 
-import this
+import this  # Python之禅

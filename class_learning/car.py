@@ -3,17 +3,17 @@
 
 class Car():
     def __init__(
-            self,
+            self,  # 都是形参
             make,
             model,
             year,
     ):
-        self.make = make
-        self.model = model
+        self.make = make  # 定义变量make, model, year, odometer_reading
+        self.model = model  #  以self 为前缀的变量都可供类中的所有方法使用
         self.year = year
         self.odometer_reading = 0
 
-    def get_descriptive_name(self):
+    def get_descriptive_name(self):  # 每个与类相关联的方法调用都自动传递实参self ， 它是一个指向实例本身的引用， 让实例能够访问类中的属性和方法
         """返回整洁的描述性信息"""
         long_name = str(self.year) + ' ' + self.make + ' ' + self.model
         return long_name.title()
@@ -68,5 +68,5 @@ class ElectricCar(Car):
         电动汽车的独特之处
         初始化父类的属性， 再初始化电动汽车特有的属性
         """
-        super().__init__(make, model, year)  #super()超类方法
+        super().__init__(make, model, year)  # super()超类方法
         self.battery = Battery()

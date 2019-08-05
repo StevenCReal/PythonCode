@@ -2,10 +2,11 @@ import sys
 
 import pygame
 
+
 def key_test():
-    #初始化并创建一个窗口
+    # 初始化并创建一个窗口
     pygame.init()
-    pygame.display.set_mode((500,500))
+    pygame.display.set_mode((500, 500))
     pygame.display.set_caption("Key Test")
 
     while True:
@@ -14,5 +15,6 @@ def key_test():
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 print(str(event.key))
+
 
 key_test()

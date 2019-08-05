@@ -7,7 +7,7 @@ name = input(prompt)
 print("\nHello, " + name + "!")
 
 age = input("How old are you? ")
-if int(age) >= 18:  #need 'int()' to convert the input to number
+if int(age) >= 18:  # need 'int()' to convert the input to number
     print("You're an adult now! ")
 
 value = 0

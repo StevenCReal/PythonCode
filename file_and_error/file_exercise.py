@@ -1,6 +1,6 @@
-#记录访问访客名字
+# 记录访问访客名字
 
-#给出文件名字
+# 给出文件名字
 file_name = r"file_and_error\Guests List.txt"
 
 active = True
@@ -23,3 +23,4 @@ with open(file_name, 'r') as file_object:
     lines = file_object.readlines()
 for line in lines:
     print(line.rstrip())
+    
